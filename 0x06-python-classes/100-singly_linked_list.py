@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-"""This a module that defines node of a singly 
-linked list."""
+"""This a module that defines node of a singly
+linked list.
+"""
 
 
 class Node:
@@ -53,7 +54,9 @@ class Node:
 
 
 class SinglyLinkedList:
-    """Defines a singly linked list."""
+    """This a class that defines a singly linked
+    list.
+    """
 
     def __init__(self):
         """Intializes a singly linked list"""
@@ -61,6 +64,7 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """Inserts a new node to the singly linked list.
+        The list will be sorted in increasing order.
         Args:
             value (Node): the new node to insert.
         """
