@@ -82,7 +82,7 @@ class SinglyLinkedList:
             new.next_node = new2.next_node
             new2.next_node = new
 
-    def printll(self):
+    def __printll__(self):
         sll = []
         temp = self.__head
         while temp is not None:
