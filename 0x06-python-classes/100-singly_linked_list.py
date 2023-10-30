@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Module to define a node of a singly linked list"""
+"""Module defines node of a singly linked list."""
 
 
 class Node:
-    """Represents a node in a singly linked list"""
+    """Represents node in a singly linked list."""
 
     def __init__(self, data, next_node=None):
         """Intilizes a new node.
