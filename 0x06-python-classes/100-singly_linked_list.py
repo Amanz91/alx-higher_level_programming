@@ -22,7 +22,7 @@ class Node:
         return (self.__data)
 
     @data.setter
-    def next_node(self, value):
+    def data(self, value):
         """Sets the data of the node.
         Args:
             value (int): integer value to store.
