@@ -96,5 +96,7 @@ class Rectangle:
         return ("".join(r))
 
     def __repr__(self):
-        """Returns the string form of a rectangle."""
+        """Returns the string form representation
+        of a rectangle.
+        """
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
