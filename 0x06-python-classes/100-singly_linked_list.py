@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A module to define a node of a singly linked list"""
+"""Module to define a node of a singly linked list"""
 
 
 class Node:
