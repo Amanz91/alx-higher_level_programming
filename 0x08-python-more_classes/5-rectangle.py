@@ -91,7 +91,7 @@ class Rectangle:
     def __str__(self):
         """Prints a recatangle."""
         if self.__width == 0 or self.__height == 0:
-            return("")
+            return ("")
         r = []
         for i in range(0, self.__height):
             [r.append("#") for j in range(0, self.__width)]
