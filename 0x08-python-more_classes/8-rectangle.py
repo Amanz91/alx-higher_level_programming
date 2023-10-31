@@ -141,5 +141,4 @@ class Rectangle:
         y = rect_2.area()
         if x >= y:
             return (rect_1)
-        else x < y:
-            return (rect_2)
+        return (rect_2)
