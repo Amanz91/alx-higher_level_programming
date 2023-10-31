@@ -121,15 +121,14 @@ class Rectangle:
         """Compares the area of two rectangles.
 
         Args:
-            rect_1 (Rectangle): 1st instance.
-            rect_2 (Rectangle): @nd instance.
+            rect_1: 1st instance.
+            rect_2: 2nd instance.
 
         Raises:
             TypeError: if args aren't instance of rectangle.
 
         Returns:
-            The biggest rectangle based on the area or
-            rect_1.
+            The biggest rectangle or rect_1.
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of
