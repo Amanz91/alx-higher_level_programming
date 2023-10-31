@@ -148,4 +148,4 @@ class Rectangle:
         Returns:
             new width and height set.
         """
-        return (cls(size, size))
+        return cls(size, size)
