@@ -87,7 +87,8 @@ class Rectangle:
     def __str__(self):
         """Returns a printable string a recatangle."""
         if self.__width == 0 or self.__height == 0:
-            return("")r = []
+            return ("")
+        r = []
         for i in range(0, self.__height):
             [r.append("#") for j in range(0, self.__width)]
             if i != self.__height - 1:
