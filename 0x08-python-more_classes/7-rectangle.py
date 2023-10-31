@@ -98,7 +98,8 @@ class Rectangle:
             return ("")
         r = []
         for i in range(0, self.__height):
-            [r.append(str(self.print_symbol)) for j in range(0, self.__width)]
+            [r.append(str(self.print_symbol))
+             for j in range(0, self.__width)]
             if i != self.__height - 1:
                 r.append("\n")
         return ("".join(r))
@@ -107,11 +108,10 @@ class Rectangle:
         """Returns the string form representation
         of a rectangle.
         """
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        return "Rectangle(" + str(self.__width) + ", " + str
+    (self.__height) + ")"
 
     def __del__(self):
-        """Deletes a rectangle.
-        And prints a message.
-        """
+        """Deletes a rectangle. And prints a message."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
