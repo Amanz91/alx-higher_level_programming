@@ -131,10 +131,10 @@ class Rectangle:
             The biggest rectangle based on the area or
             rect_1.
         """
-        if rect_1 not isinstance(Rectangle):
+        if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of
                             Rectangle")
-        if rect_2 not isinstance(Rectangle):
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_1 must be an instance of
                             Rectangle")
         x = rect_1.area()
