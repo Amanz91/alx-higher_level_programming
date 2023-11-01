@@ -1,0 +1,44 @@
+===============================
+How to use 2-matrix_divided.py
+===============================
+
+Usage of ``matrix_divided(matrix, div)``
+========================================
+
+Import function from module:
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test for regular marix:
+
+	>>> matrix_divided([[2, 4, 8], [1, 2, 3]], 2)
+	[[1.0, 2.0, 4.0], [0.5, 1.0, 1.5]]
+
+Test for one element:
+
+	>>> matrix_divided([[2]], 2)
+	[[1.0]]
+
+Test for 0 division:
+
+	>>> matrix_divided([[2, 4]], 0)
+	Traceback (most recent call last):
+	...
+	ZeroDivisionError: division by zero
+
+Test for negative no:
+
+	>>> matrix_divided([[2, 4]], -1)
+	[[-2.0, -4.0]]
+
+Test for empty matrix:
+
+	>>> matrix_divided([[]], 1)
+	Traceback (most recent call last):
+	...
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test for division by inf:
+
+	>>> matrix_divided([[2, 4.4, 6]], float('inf'))
+	[[0.0, 0.0, 0.0]]
