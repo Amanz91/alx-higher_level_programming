@@ -1,0 +1,114 @@
+===================================
+How to use 0-add_integer.py
+===================================
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
+Usage
+=====
+
+``add_integer(...)``` returns the addition of its two arguments.
+For numbers, that value is equivalent to using the ``+`` operator.
+
+::
+
+	>>>add_integer=__import__('o-add_integer').add_integer
+	>>>add_integer(2, 3)
+	5
+
+     The function works for integers.
+::
+
+	>>>add_integer(2, -3)
+	-1
+
+     The function works for negative values.
+
+::
+	>>>add_integer(2.0, 3.0)
+	5
+
+     The function works for floats.
+
+::
+	>>>add_integer(3.9, 0.4)
+	3
+
+     Func works for combination of floats and non-floating points.
+
+::
+
+	>>>add_integer(2.3, -3)
+	-2.
+
+     Second argument is optional - by default its 98.
+
+::
+
+	>>>add_integer(3)
+	101
+
+Non-Numbers
+===========
+``add_integer()`` works if both arguments are rither floats or ints.
+Otherwise it raises a TypeError:
+
+::
+
+	>>>add_integer("hi", 3)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+::
+
+	>>>add_integer(3, "hi")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+::
+
+	
+	>>>add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+::
+
+	>>>add_integer(3.2, "hi")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+     If both args aren't ints or floats, it raises a TypeError msg
+     for the first argument.
+
+::
+
+	>>>add_integer("hi", "there")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+     The func. will fail if NaN nums or inf is passed as args.
+
+::
+
+	>>>add_integer(float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+::
+
+	>>>add_integer(2, float('nan'))
+	Traceback (most recent call last):
+	ValueError: cannot convert float NaN to integer
+
+::
+
+	>>>add_integer(float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+::
+
+	>>>add_integer(3, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
