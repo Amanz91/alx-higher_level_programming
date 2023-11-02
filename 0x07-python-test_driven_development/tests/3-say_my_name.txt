@@ -44,3 +44,8 @@ Test for empty first name:
 
 	>>> say_my_name("", "Aman")
 	My name is  Aman
+
+Test for emprty first and last name:
+
+	>>> say_my_name("", "")
+	My name is  

@@ -9,6 +9,6 @@ try:
 except Exception as e:
     print(e)
 try:
-    say_my_name("", "White")
+    say_my_name("", "")
 except Exception as e:
     print(e)
