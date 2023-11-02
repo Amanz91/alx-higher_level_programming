@@ -1,0 +1,46 @@
+===============================
+How to use 3-say_my_name.py
+===============================
+
+Usage of ``say_my_name(first_name, last_name="")``
+=================================================
+
+Import function from module:
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test for regular name:
+
+	>>> say_my_name("Aman", "Alex")
+	My name is Aman Alex
+
+Test for one element (first_name only):
+
+	>>> say_my_name("Aman")
+	My name is Aman 
+
+Test for non string:
+
+	>>> say_my_name(123, "Aman")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Test for non string:
+
+	>>> say_my_name("Aman", 34)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+Test for non string:
+
+	>>> say_my_name(123, 321)
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Test for empty first name:
+
+	>>> say_my_name("", "Aman")
+	My name is  Aman
