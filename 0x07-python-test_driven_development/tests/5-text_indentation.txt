@@ -1,0 +1,94 @@
+================================
+How to use 5-text_indentation.py
+================================
+
+Usage of ``text_indentation(text)``
+===================================
+
+Import function from module:
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test for text:
+
+	>>> text_indentation("Hi, ALX")
+	Hi, ALX
+
+Test for text with white space:
+
+        >>> text_indentation("Hi, ALX   ")
+        Hi, ALX
+
+Test for text with white space:
+
+        >>> text_indentation("  Hi, ALX   ")
+        Hi, ALX
+
+Test for string with all delimiters:
+
+	>>> text_indentation("Hi:   How are u? ALX .")
+        Hi:
+	<BLANKLINE>
+	How are u?
+	<BLANKLINE>
+	ALX.
+	<BLANKLINE>
+
+Test for string with new lines:
+
+	>>> text_indentation("Hi:\n\n")
+        Hi:
+        <BLANKLINE>
+	<BLANKLINE>
+    	<BLANKLINE>
+
+Test for delimeters only:
+
+	>>> text_indentation(".?:")
+	.
+    	<BLANKLINE>
+    	?
+   	<BLANKLINE>
+    	:
+    	<BLANKLINE>
+
+Test existing newlines:
+    
+	>>> text_indentation("?\n\n.\n\n:")
+    	?
+    	<BLANKLINE>
+    	<BLANKLINE>
+   	<BLANKLINE>
+    	.
+    	<BLANKLINE>
+    	<BLANKLINE>
+    	<BLANKLINE>
+    	:
+    	<BLANKLINE>
+
+Test for newline:
+    	>>> text_indentation("\n")
+    	<BLANKLINE>
+
+Test for 2 newline:
+    	>>> text_indentation("\n\n")
+    	<BLANKLINE>
+    	<BLANKLINE>
+
+Test for string with empty string:
+    	>>> text_indentation("")
+
+
+Test for none:
+
+   	>>> text_indentation(None)
+    	Traceback (most recent call last):
+    	...
+    	TypeError: text must be a string
+
+Test for  number:
+    
+	>>> text_indentation(33)
+    	Traceback (most recent call last):
+    	...
+    	TypeError: text must be a string
