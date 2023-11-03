@@ -50,14 +50,21 @@ Test for negative number:
 
 Test for inf:
 
-	>>> print_square("Aman")
+	>>> print_square('inf')
         Traceback (most recent call last):
         ...
         TypeError: size must be an integer
 
 Test for nan:
 
-	>>> print_square("Aman")
+	>>> print_square('nan')
+        Traceback (most recent call last):
+        ...
+        TypeError: size must be an integer
+
+Test for float:
+
+        >>> print_square(4.5)
         Traceback (most recent call last):
         ...
         TypeError: size must be an integer
