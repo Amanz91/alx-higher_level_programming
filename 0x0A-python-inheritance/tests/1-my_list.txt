@@ -5,7 +5,7 @@ How to use 1-my_list.py
 Usage of ``print_sorted(self)``
 ===============================
 
-Import function from module:
+Bring function from module:
 
 	>>> MyList = __import__('1-my_list').MyList
 
