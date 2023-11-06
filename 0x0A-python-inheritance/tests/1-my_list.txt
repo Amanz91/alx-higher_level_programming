@@ -1,0 +1,80 @@
+========================
+How to use 1-my_list.py
+========================
+
+Usage of ``print_sorted(self)``
+===============================
+
+Import function from module:
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Test for regular case:
+
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+
+Test for a predefined list:
+
+	>>> a = [9, 6, 3]
+	>>> my_list = MyList(a)
+	>>> my_list.print_sorted()
+	[3, 6, 9]
+
+Test for an empty list:
+
+	>>> a = []
+	>>> my_list = MyList(a)
+        >>> my_list.print_sorted()
+	[]
+
+test for a single number:
+
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.print_sorted()
+	[1]
+
+Test for equal numbers:
+
+	>>> my_list1 = MyList()
+	>>> my_list1.append(2)
+	>>> my_list1.append(2)
+	>>> my_list1.append(2)
+	>>> my_list1.print_sorted()
+	[2, 2, 2]
+
+Test for negative numbers:
+
+	>>> my_list1 = MyList()
+        >>> my_list1.append(2)
+        >>> my_list1.append(-2)
+        >>> my_list1.append(12)
+	>>> my_list1.print_sorted()
+        [-2, 2, 12]
+
+Test for parent object:
+
+	>>> my_list = [1, 2, 3]
+	>>> my_list.print_sorted()
+	Traceback (most recent call last):
+	...
+	AttributeError: 'list' object has no attribute 'print_sorted'
+
+Test for undefined object:
+
+	>>> MyList = __import__('1-my_list').MyList
+	>>> my_list2.print_sorted()
+	Traceback (most recent call last):
+	...
+	NameError: name 'my_list2' is not defined
