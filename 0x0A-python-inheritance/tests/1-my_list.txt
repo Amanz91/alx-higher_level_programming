@@ -2,8 +2,6 @@
 How to use 1-my_list.py
 ========================
 
-Usage of ``print_sorted(self)``
-===============================
 
 Bring function from module:
 

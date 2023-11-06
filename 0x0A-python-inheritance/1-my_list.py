@@ -2,7 +2,7 @@
 """A module that prints the list, but sorted."""
 
 
-class Mylist(list):
+class MyList(list):
     """A sub-class of the in-built class list."""
 
     def print_sorted(self):
