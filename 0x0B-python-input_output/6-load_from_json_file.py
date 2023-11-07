@@ -3,7 +3,7 @@
 import json
 
 
-def load_to_json_file(filename):
+def load_from_json_file(filename):
     """Func to create an object from JSON file.
     Args:
         filename (str): filename.
