@@ -9,7 +9,7 @@ class Student:
         """Initialize a student."""
         self.first_name = first_name
         self.last_name = last_name
-        sel.age = age
+        self.age = age
 
     def to_json(self):
         """Return the dictionary represntation of a student."""
