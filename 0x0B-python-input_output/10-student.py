@@ -13,6 +13,14 @@ class Student:
 
     def to_json(self, a=None):
         """Return the dictionary represntation of a student."""
-        if type(a) == list and all(type(e) == str for e in a):
-            return {ls: getattr(self, ls) for ls in a if hasattr(self, ls)
-        return self.__dict__
+        try:
+            for attr in a:
+                if type(attr) is not str:
+                    return self.__dict__
+        except Exception:
+            return self.__dict__
+        d = dict()
+        for k, value in self.__dict__.i():
+            if k in a:
+                d[k] = value
+        return d
