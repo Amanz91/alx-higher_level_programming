@@ -20,7 +20,7 @@ class Student:
         except Exception:
             return self.__dict__
         d = dict()
-        for k, value in self.__dict__.i():
+        for k, value in self.__dict__.items():
             if k in a:
                 d[k] = value
         return d
